@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body><!--nav-->
+        <script src="js/script.js"></script>
+        <header class="nav-container">
+            <div class="logo-icon">
+                <img src="asset/logo.jpeg" alt="logo-icon">
+            </div>
+            <nav>
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#travel-experiences">Traveler Experiences</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#message-us">Message us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <hr /><!--home-->
+        <main>
+            <section id="home">
+                <header>
+                    <h1 style="margin: 20px 50px;">Hello <span id="name">user</span> Welcome To My Website</h1>
+                </header>
+
+                <article>
+                    <p style="margin: 20px 50px;">DARE TO LIVE THE LIFE YOU'VE  ALWAYS WANTED</p>
+                    <div class="slideshow">
+                        <div class="slides">
+                            <div class="slide"><img src="asset/slide1.jpeg" alt="Gambar 1"></div>
+                            <div class="slide"><img src="asset/slide2.jpeg" alt="Gambar 2"></div>
+                            <div class="slide"><img src="asset/slide3.jpeg" alt="Gambar 3"></div>
+                            <div class="slide"><img src="asset/slide4.jpeg" alt="Gambar 4"></div>
+                        </div>
+                    </div>
+                    
+                </article>
+            </section>
+        <hr/><!--travel experience-->
+
+            <section id="travel-experiences">
+                <header>
+                    <h1 style="margin: 20px 50px;">Traveler Experience</h1>
+                </header>
+
+                <article class="profile-content">
+                    <div class="profile-item">
+                    <div class="profile-icon"><img src="asset/profile1.jpeg" ></div>
+                    <p style="font-weight: bold ; font-family: 'Times New Roman', Times, serif;">dimas</p>
+                    <p>travel ini bagus karena murah dan banyak benefit di travel ini</p>
+                    </div>
+
+                    <div>
+                    <div class="profile-icon"><img src="asset/profile2.jpeg" ></div>
+                    <p style="font-weight: bold ; font-family: 'Times New Roman', Times, serif;">lofi</p>
+                    <p>gak tau mau tulsi apa</p>
+                    </div>
+
+                    <div>
+                    <div class="profile-icon"><img src="asset/profile3.jpeg" ></div>
+                    <p style="font-weight: bold ; font-family: 'Times New Roman', Times, serif;">bearbare</p>
+                    <p>looking cool</p>
+                    </div>
+                </article>
+            </section>
+        <hr/> <!--about me-->
+            <section id="about-me">
+                <header>
+                    <h1 style="margin: 20px 50px;">ABOUT ME</h1>
+                </header>
+                <article class="aboutme">
+                    <div class="avatar"><img src="asset/aboutme.jpg" ></div>
+                    <div class="teks">
+                        <h1>DEAN SIREGAR</h1>
+                        <p style="font-family: 'Times New Roman', Times, serif;">mahasiswa normal yang menyukai game,anime dan film</p>
+                    </div>
+                </article>
+            </section>
+
+
+        <hr/><!--message us-->
+        <section id="message-us">
+    <header>
+         <h1 style="margin: 20px 50px;">MESSAGE US</h1>
+    </header>
+    
+        <article class="a3">
+    
+      
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="namo">Nama</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="namo" placeholder="Nama" style="width: 51%; border-radius: 5px; padding: 5px;"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="birth-date">Tanggal Lahir:</label></td>
+                        <td>:</td>
+                        <td><input type="date" id="birth-date" style="width: 51%; border-radius: 5px; padding: 4px;"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Jenis Kelamin</label></td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Laki-laki</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Pesan</label></td>
+                        <td>:</td>
+                        <td><textarea id="message"  style="border-radius: 5px;     width: 322px;
+                            height: 134px;"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><button type="button" onclick="validateForm()" style="padding: 6px 240px;">Submit</button></td>
+                    </tr>
+                </table>
+                <p class="error" id="errormessage" style="display: none;">Tolong form diisi</p>
+            </form>
+        
+            <div class="display-box">
+                <p>Nama: <span id="display-name"></span></p>
+                <p>Tanggal Lahir: <span id="display-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="display-gender"></span></p>
+                <p>Pesan: <span id="display-message"></span></p>
+            </div>
+        </div>
+
+    </article>
+    </section>
+        </main>
+
+    </body>
+</html>
